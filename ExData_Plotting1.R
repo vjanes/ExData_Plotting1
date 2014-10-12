@@ -1,5 +1,4 @@
 Sys.setlocale("LC_TIME", "English")
-setwd("D:/USERS/Vincent/Documents/R/ExData_Plotting1")
 
 setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
 
