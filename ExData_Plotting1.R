@@ -1,8 +1,8 @@
 Sys.setlocale("LC_TIME", "English")
 
+##loading data
 setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
 
-##loading data
 alldata<-read.csv("household_power_consumption.txt", 
               header = TRUE, sep = ";",
               colClasses=c('myDate','character',rep('numeric',7)),na.strings="?")
